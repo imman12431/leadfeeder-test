@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeadFeeder – Capture More Leads</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">LeadFeeder</div>
+      <a href="#contact" class="btn btn-outline">Get Started</a>
+    </nav>
+    <div class="hero-content">
+      <h1>Turn Visitors Into <span class="highlight">Qualified Leads</span></h1>
+      <p>Identify who's visiting your website, what they care about, and reach out before your competition does.</p>
+      <a href="#contact" class="btn btn-primary">Start Free Trial</a>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <h2>Why LeadFeeder?</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">&#128269;</div>
+        <h3>Identify Anonymous Visitors</h3>
+        <p>See which companies are browsing your site — even if they never fill out a form.</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#9889;</div>
+        <h3>Real-Time Alerts</h3>
+        <p>Get notified the moment a high-value prospect lands on your key pages.</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#128200;</div>
+        <h3>CRM Integration</h3>
+        <p>Push leads directly into your CRM so your sales team can act fast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="social-proof">
+    <h2>Trusted by growth teams worldwide</h2>
+    <div class="stats">
+      <div class="stat"><span class="number">10,000+</span><span class="label">Companies</span></div>
+      <div class="stat"><span class="number">3x</span><span class="label">More Pipeline</span></div>
+      <div class="stat"><span class="number">98%</span><span class="label">Customer Satisfaction</span></div>
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE FORM -->
+  <section class="contact" id="contact">
+    <div class="form-wrapper">
+      <h2>Start Generating Leads Today</h2>
+      <p>No credit card required. Free 14-day trial.</p>
+      <form id="leadForm" onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Work Email" required />
+        <input type="text" name="company" placeholder="Company Name" required />
+        <button type="submit" class="btn btn-primary">Get Free Access</button>
+      </form>
+      <p id="successMsg" class="success-msg" hidden>Thanks! We'll be in touch shortly.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 LeadFeeder. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('leadForm').hidden = true;
+      document.getElementById('successMsg').hidden = false;
+    }
+  </script>
+
+</body>
+</html>
